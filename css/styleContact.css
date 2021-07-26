@@ -1,0 +1,131 @@
+html{
+    scroll-behavior: smooth;
+}
+
+h2, h3, h4, .nav-item, #transition, footer{
+    text-align: center;
+}
+
+/* ----------------- HEADER ----------------- */
+.collapse{
+    margin-left: 2%;
+}
+
+.nav-item{
+    color: darkslategray;
+    font-weight: bold;
+}
+
+header{
+    background: url(/media/main.jpg)no-repeat 50% 50%;
+    background-size: cover;
+    height: 100vh;
+    border-radius: 0px 0px 20px 20px;
+    margin-bottom: 40px;
+}
+
+h1{
+    font-size: 5em;
+    padding: 200px 0 0 20%;
+    text-shadow: -3px 3px 2px #BCF5A9;
+    animation: titre ease 3.5s;
+}
+
+@keyframes titre{
+    0% {
+        opacity: 0;
+        transform: translateY(180px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* ----------------- ELEMENTS ----------------- */
+#leftPartProject{
+    background-color: #BCF5A9;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.elementsProject{
+    padding: 50px 25px;
+}
+
+.elementsProject img{
+    border-radius: 20px;
+    width: 300px;
+    margin-left: 50px;
+}
+
+.elementsProject p{
+    font-size: 1.2em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-align: center;
+}
+
+.elementsProject .button{
+    text-align: right;
+    margin: 10px 5% 0 0;
+}
+
+
+/* ----------------- FOOTER ----------------- */
+footer{
+    background-color: #BCF5A9;
+    padding: 15px 0 5px 0;
+}
+
+
+/* ----------------- MEDIA QUERIES ----------------- */
+@media screen and (max-width : 1200px){
+    .elementsProject img{
+        margin-left: 70px;
+    }
+}
+
+@media screen and (max-width : 992px){
+    #leftPartProject{
+        background-color: #BCF5A9;
+        border-radius: 20px;
+        padding: 25px;
+    }
+
+    #rightPartProject{
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .elementsProject{
+        padding: 30px 15px;
+    }
+
+    .elementsProject img{
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width : 576px){
+    #leftPartProject{
+        background-color: #BCF5A9;
+        border-radius: 20px;
+        padding: 25px;
+    }
+
+    .elementsProject{
+        padding: 30px 50px;
+    }
+
+    .elementsProject img{
+        width: 250px;
+    }
+
+    nav{
+        display: none !important;
+    }
+}
