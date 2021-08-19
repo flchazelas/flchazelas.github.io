@@ -1,0 +1,32 @@
+@import url("../css/style.css");
+
+/* ----------------- ELEMENTS ----------------- */
+.formulaire{
+    padding-bottom: 50px;
+}
+
+.btn-primary{
+    color: #fff;
+    background-color: #17445e;
+    border-color: #17445e;
+}
+
+.btn-primary:hover{
+    color: wheat;
+    background-color: #0f3042;
+    border-color: #0a212e;
+}
+
+
+/* ----------------- MEDIA QUERIES ----------------- */
+@media screen and (max-width : 1200px){
+
+}
+
+@media screen and (max-width : 992px){
+
+}
+
+@media screen and (max-width : 576px){
+
+}
