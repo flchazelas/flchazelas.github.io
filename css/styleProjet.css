@@ -17,7 +17,12 @@ h2{
 }
 
 .nav-item{
-    color: wheat;
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav-item:hover{
+    color: rgb(233, 206, 158);
     font-weight: bold;
 }
 

@@ -52,7 +52,6 @@ var form = document.getElementById("my-form");
         
         async function handleSubmit(event) {
           event.preventDefault();
-          var status = document.getElementById("my-form-status");
           var data = new FormData(event.target);
           fetch(event.target.action, {
             method: form.method,
@@ -61,11 +60,23 @@ var form = document.getElementById("my-form");
                 'Accept': 'application/json'
             }
           }).then(response => {
-            status.innerHTML = "Message envoyé!";
+            open_popup("../html/popup.html");
             form.reset()
           }).catch(error => {
-            status.innerHTML = "Oops! There was a problem submitting your form"
+            open_popup("../html/popupErreur.html");
           });
         }
 
 form.addEventListener("submit", handleSubmit);
+
+function open_popup(url){
+    var width   = 320;
+    var height  = 240;
+    var haut    = (screen.height-height)/2;
+    var gauche  = (screen.width-width)/2;
+    window.open(
+        url,
+        'popup_envoi_msg',
+        'status=no , toolbar=no, location=yes, menubar=no, resizable=yes, top='+haut+', left='+gauche+', directories=no, width='+width+', height='+height
+    );
+}
