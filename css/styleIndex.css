@@ -1,0 +1,119 @@
+@import url("../css/style.css");
+
+
+/* ----------------- ELEMENTS ----------------- */
+.APropos{
+    padding: 1px 0 0 0;
+    background-color: whitesmoke;
+}
+
+.Competences{
+    padding: 1px 0 0 0;
+    background-color: #93afc0;
+}
+
+.CentresInteret{
+    padding: 1px 0 0 0;
+    background-color: whitesmoke;
+}
+
+.CurriculumVitae{
+    padding: 1px 0 0 0;
+    background-color: #93afc0;
+}
+
+.elementsPresentation{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 100px;
+}
+
+#rightImg{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+#leftImg{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+#rightText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#leftText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cv{
+    text-align: center;
+}
+
+/* ----------------- MEDIA QUERIES ----------------- */
+@media screen and (max-width : 1200px){
+    #rightImg{
+        justify-content: right;
+    }
+
+    #rightImg img{
+        width: 80%;
+    }
+    
+    #leftImg{
+        justify-content: left;
+    }
+
+    #leftImg img{
+        width: 80%;
+    }
+    
+    #rightText{
+        justify-content: right;
+    }
+    
+    #leftText{
+        justify-content: left;
+    }
+}
+
+@media screen and (max-width : 992px){
+    #rightImg{
+        margin-top: 5%;
+        justify-content: center;
+    }
+
+    #rightImg img{
+        width: 70%;
+    }
+    
+    #leftImg{
+        margin-bottom: 10%;
+        justify-content: center;
+    }
+
+    #leftImg img{
+        width: 70%;
+    }
+    
+    #rightText{
+        justify-content: center;
+    }
+    
+    #leftText{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width : 576px){
+    #leftImg{
+        margin-bottom: 10%;
+        justify-content: center;
+    }
+}
