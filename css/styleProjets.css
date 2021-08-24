@@ -32,13 +32,13 @@
     margin: 5% 5% 0 0;
 }
 
-.btn-success{
+.btn-succes{
     color: #fff;
     background-color: #17445e;
     border-color: #17445e;
 }
 
-.btn-success:hover{
+.btn-succes:hover{
     color: wheat;
     background-color: #0f3042;
     border-color: #0a212e;
