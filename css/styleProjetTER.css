@@ -1,0 +1,56 @@
+@import url("../css/styleProjet.css");
+
+/* ----------------- ELEMENTS ----------------- */
+.iframe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+iframe{
+    width: 1280px;
+    height: 640px;
+    text-align: center;
+}
+
+p{
+    margin : 5% 15% 5% 15%;
+    text-align: center;
+}
+
+#demo{
+    margin : 5% 20% 5% 20%;
+}
+
+.carousel-control-prev-icon{
+    width: 40px;
+    height: 40px;
+}
+
+.carousel-control-next-icon{
+    width: 40px;
+    height: 40px;
+}
+
+
+/* ----------------- MEDIA QUERIES ----------------- */
+@media screen and (max-width : 1199px){
+    #demo{
+        margin : 5% 15% 5% 15%;
+    }
+
+    iframe{
+        width: 920px;
+        height: 480px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width : 991px){
+    #demo{
+        margin : auto;
+    }
+}
+
+@media screen and (max-width : 575px){
+}

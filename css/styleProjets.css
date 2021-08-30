@@ -1,0 +1,123 @@
+@import url("../css/style.css");
+
+
+h2{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 2.5em;
+}
+
+/* ----------------- ELEMENTS ----------------- */
+#leftPart{
+    background-color: #93afc0;
+    border-radius: 20px 0 0 20px;
+    padding: 25px;
+}
+
+#leftPart p{
+    margin-top: 5%;
+}
+
+.elements{
+    padding: 50px 25px;
+}
+
+.elements img{
+    border-radius: 0 20px 20px 0;
+    width: 300px;
+    margin-left: -5px;
+}
+
+.elements p{
+    font-size: 1.2em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-align: center;
+}
+
+#leftPart .but{
+    text-align: end;
+}
+
+.btn-success{
+    color: #fff;
+    background-color: #17445e;
+    border-color: #17445e;
+}
+
+.btn-success:hover{
+    color: wheat;
+    background-color: #0f3042;
+    border-color: #0a212e;
+}
+
+.btn-check:focus + .btn-success, .btn-success:focus {
+    color: wheat;
+    background-color: #0f3042;
+    border-color: #0a212e;
+    box-shadow: 0 0 0 0.20rem #091f2c;
+  }
+  .btn-check:checked + .btn-success, .btn-check:active + .btn-success, .btn-success:active, .btn-success.active, .show > .btn-success.dropdown-toggle {
+    color: wheat;
+    background-color: #0f3042;
+    border-color: #0a212e;
+  }
+  .btn-check:checked + .btn-success:focus, .btn-check:active + .btn-success:focus, .btn-success:active:focus, .btn-success.active:focus, .show > .btn-success.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.20rem #091f2c;
+  }
+  .btn-success:disabled, .btn-success.disabled {
+    color: #fff;
+    background-color: #17445e;
+    border-color: #17445e;
+  }
+
+/* ----------------- MEDIA QUERIES ----------------- */
+@media screen and (max-width : 1199px){
+}
+
+@media screen and (max-width : 991px){
+    #leftPart{
+        border-radius: 20px;
+        padding: 25px;
+    }
+
+    #leftPart .but{
+        text-align: right;
+        margin: 5% 0 0 0;
+    }
+
+    #rightPart{
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .elements{
+        padding: 30px 15px;
+    }
+
+    .elements img{
+        margin-left: 0px;
+        border-radius: 20px;
+    }
+
+    #leftPart .but{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width : 575px){
+    #leftPart{
+        border-radius: 20px;
+        padding: 25px;
+    }
+
+    .elements{
+        padding: 30px 50px;
+    }
+
+    .elements img{
+        width: 250px;
+    }
+}

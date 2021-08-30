@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio Floran Chazelas Contact</title>
+
+    <link rel="stylesheet" href="../bootstrap.css">
+    <link rel="stylesheet" href="../css/styleContact.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm fixed-top">
+            <a href="#" class="logo-header" rel="nofollow"><img class="img" src="/media/gamepad.png" alt="logo"></a>
+            <a class="button" href="#" onclick="Pop();return false;">
+                <img class="img" src="/media/menu.png" alt="menu">
+            </a>
+            <div id="navbar" class="collapse navbar-collapse" style="display: none;">
+                <a href="/" class="nav-item nav-link">Présentation</a>
+                <a href="/html/projets.html" class="nav-item nav-link">Projets</a>
+                <a href="/html/contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Me contacter</h2>
+        <div class="container">
+            <div class="formulaire">
+                <form id="my-form" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mknkqwqq" method="post">
+                    <div class="row mb-3">
+                        <div class="col-sm-12 message-sent">
+                            <p>Votre message a bien été envoyé. Je vous recontacterai sous 24h et vous remercie !</p>
+                        </div>
+                        <div class="col-sm-12 message-error">
+                            <p>Il y a eu une erreur lors de l'envoi du message. Veuillez réessayer ou utiliser un autre moyen pour me contacter.</p>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="form-group col-sm-6">
+                            <label for="full-name" class="form-label">Prénom et Nom</label>
+                            <input type="text" class="form-control" name="name" id="full-name" placeholder="Prenom Nom" required="">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="email-address" class="form-label">Adresse Email</label>
+                            <input type="email" class="form-control" name="_replyto" id="email-address" placeholder="prenom.nom@entreprise.com" required="">
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="message" class="form-label">Contenu du Message</label>
+                        <textarea class="form-control" rows="5" name="message" id="message" placeholder="Votre Message" required=""></textarea>
+                        <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                    </div>
+                    <!--<button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right ">Submit</button>-->
+                    <input type="submit" class="btn btn-primary" id="validation" value="Envoyer">
+                    <p id="my-form-status"></p>
+                    <!--<div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div>-->
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <a href="#" rel="nofollow"><img class="img" src="/media/gamepad.png" alt="logo"></a>
+        <ul class="footer-links-container">
+          <li class="footer-link logo">
+              <a href="mailto:flo.chazelas@orange.fr">
+                  <img src="/media/email.png" alt="Logo LinkedIn"/>
+              </a>
+          </li>
+          <li class="footer-link logo">
+              <a href="tel:+33638258905">
+                  <img src="/media/telephone.png" alt="Logo LinkedIn"/>
+              </a>
+          </li>
+          <li class="footer-link logo">
+              <a href="https://www.linkedin.com/in/floran-chazelas/">
+                  <img src="/media/linkedIn.png" alt="Logo LinkedIn"/>
+              </a>
+          </li>
+        </ul>
+      </footer>
+
+    <script src="../jquery.min.js"></script>
+    <script src="../js/scroll_nav_bar.js"></script>
+    <script src="../js/contact_form.js"></script>
+
+    <script>
+        function Pop(){
+            if(document.getElementById("navbar").style.display == "none"){
+                document.getElementById("navbar").style.display = "block";
+            }
+            else{
+                document.getElementById("navbar").style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
