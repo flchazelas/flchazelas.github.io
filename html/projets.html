@@ -35,7 +35,22 @@
                     <div class="col-lg-8 col-xl-9" id="leftPart">
                         <h3>TER (Travail d'Etude et de Recherche)</h3>
                         <p>Quicker Than Light est un jeu développé pendant le TER de Master 1 Informatique de janvier 2020 à juin 2020. <br>
-                           C'est un jeu d'arcade du genre Shoot'em up développé sous Unity en 2,5D dans l'idée de jouer sur une borne arcade.</p>
+                            C'est un jeu d'arcade du genre Shoot'em up développé sous Unity en 2,5D dans l'idée de jouer sur une borne arcade. <br>
+                            Ce projet a été organisé de façon agile entre les quatre membres de l'équipe. <br>
+            
+                            Pour ma part, j'ai réalisé le comportement des ennemis en créant une multitude de vaisseaux, certains se déplacent en suivant des courbes de Béziers, d'autres suivent le joueur. Chacun à des attaques ou des comportements différents. <br>
+            
+                            J'ai aussi participé à la réalisation des niveaux du jeu. Le jeu génère ces niveaux procéduralement. Il possède une liste d'ensembles d'ennemis ayant chacun un score attribué, et une liste des évènements applicables. En fonction du niveau du joueur et de son avancé dans le jeu, il va générer un score global qui permettra de créer le niveau. <br>
+                            Plusieurs ensembles d'ennemis ont été créés pour être mixé à l'aide d'un réseau de contraintes appliqué sur le score global du niveau. Ainsi, la difficulté peut être croissante celon le niveau en cours et l'avancé du joueur. Cela permet de rendre la création des niveaux automatique. <br>
+                            
+                            Pour pouvoir essayer "Quicker Than Light", vous pouvez télécharger l'exécutable en bas de page. <br>
+                            Voici les contrôles disponible dans le menu pause : <br>
+                            - Espace : pour entrer dans le niveau ou pour valider ou pour tirer <br>
+                            - Echap : pour quitter le jeu ou pour accéder au menu <br>
+                            - R : pour effectuer un Dash <br>
+                            - E : pour réaliser une Onde <br>
+                            - Flèches directionnelles : pour se déplacer <br>
+                            - Z : pour ralentir le vaisseau </p>
                         <div class="but">
                             <button onclick="self.location='projetTER.html'" class="btn btn-success">En savoir plus</button>
                         </div>
@@ -49,8 +64,16 @@
                     <div class="col-lg-8 col-xl-9" id="leftPart">
                         <h3>Projet VR</h3>
                         <p>Ce jeu est un projet du cours de réalité virtuel de mon Master 2 réalisé en 2021. <br>
-                           C'est un jeu VR adapté pour les CardBoard, donc sans aucune manette, avec pour seule commande, les rotations de tête et le clique sur l'écran du smartphone. <br>
-                           C'est un mélange entre un runner et un platformer.</p>
+                            C'est un jeu VR adapté pour les CardBoard, donc sans aucune manette, avec pour seule commande, les rotations de tête et le clique sur l'écran du smartphone. <br>
+                            C'est un mélange entre un runner et un platformer en vue première personne. <br>
+                            Le but est de parcourir plusieurs niveaux et d'arriver à la fin sans mourrir. Ces niveaux sont composés de plusieurs éléments ayant pour but de nous empécher d'avancer comme vous pouvez le voir dans le trailer. <br>
+                            Le jeu a été créé sur Unity et adapté pour les CardBoards, donc sur smartphone Android (.apk). Le but était de pouvoir réaliser un jeu juste avec les seuls capteurs du smartphone. <br>
+                            A l'aide du gyroscope du smartphone, l'inclinaison de la tête du joueur peut être connue. En adaptant les mouvements de tête du joueur sur des actions, nous pouvons nous déplacer sans contrôleurs extérieurs. <br>
+                            Voici les commandes, mouvements de tête du joueur : <br>
+                            - de droite à gauche pour les déplacements latéraux <br>
+                            - en haut pour sauter <br>
+                            - en bas pour s'accroupir. <br>
+                            - et le clique sur le smartphone pour interagir avec des éléments du jeu.</p>
                         <div class="but">
                             <button onclick="self.location='projetVR.html'" class="btn btn-success">En savoir plus</button>
                         </div>
@@ -64,8 +87,10 @@
                     <div class="col-lg-8 col-xl-9" id="leftPart">
                         <h3>Projet Jeu de Gestion</h3>
                         <p>Ce jeu est un projet du cours de Jeux Sérieux de mon Master 2 réalisé en 2021. <br>
-                           C'est un jeu de gestion développé sous Unity et conçu comme un jeu sérieux dans l'idée d'apprendre à gérer une population. <br>
-                           Le but est de faire croître votre population tout en gérant les évènements aléatoire qui surviennent.</p>
+                            C'est un jeu de gestion développé sous Unity et conçu comme un jeu sérieux dans l'idée d'apprendre à gérer une population. <br>
+                            Le but est de faire croître votre population tout en gérant les évènements aléatoire qui surviennent. <br>
+                            Le joueur débute la partie avec une petite population, le but est de finir le niveau tout en gardant en vie sa population. Chaque niveau est généré procéduralement à l'aide d'un ensemble d'évènements se succédant les uns après les autres pour diversifier les niveaux. <br>
+                            Chaque évènement doit être réussi dans le temps imparti pour finir un niveau. Le joueur doit en plus de gérer sa population, gérer la construction de bâtiments, l'attribution de rôles à ses habitants ainsi que gérer ces ressources.</p>
                         <div class="but">
                             <button onclick="self.location='projetGestion.html'" class="btn btn-success">En savoir plus</button>
                         </div>
@@ -79,7 +104,16 @@
                     <div class="col-lg-8 col-xl-9" id="leftPart">
                         <h3>Code Game Jam</h3>
                         <p>Ce jeu a été réalisé lors de la Code Game Jam de 2021 organisée par l'Université de Montpellier. <br>
-                           Le thème de cette Game Jam était "la chasse aux trésor". C'est donc un jeu 2D d'Aventure en Pixel Art réalisé sous Unity conçu et développé de A à Z par notre équipe de 6 personnes en 2 jours.</p>
+                            Le thème de cette Game Jam était "la chasse aux trésor". C'est donc un jeu 2D d'Aventure en Pixel Art réalisé sous Unity conçu et développé de A à Z par notre équipe de 6 personnes en deux jours. <br>
+                            Nous avons donc réalisé l'ensemble des décors en Pixel Art, des animations, des comportements, et de l'UI. <br>
+                            J'ai pour ma part réalisé les animations des personnages, ainsi que le comportement du joueur : tir à l'arc, déplacements, interactions.. <br>
+                            Cela a été un moment de convivialité entre plusieurs personnes ne se connaissant pas et un défi de réussir un petit jeu en l'espace de seulement deux jours sans aucune interruption.
+                            Vous pouvez tester ce jeu disponible en bas de page et dont voici les commandes : <br>
+                            - Flèches directionnelles : pour se déplacer <br>
+                            - Espace : bander et tirer à l'arc en fonction du temps appuyé sur la touche <br>
+                            - Souris : viser une direction pour tirer à l'arc, ou interagir avec les éléments du jeu <br>
+                            - Tabulation : s'accroupir et rester silencieux <br>
+                            - Echap : accéder au menu</p>
                         <div class="but">
                             <button onclick="self.location='projetGameJam.html'" class="btn btn-success">En savoir plus</button>
                         </div>
